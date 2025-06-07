@@ -3,7 +3,7 @@ package com.aluracursos.screenmatch_phrases.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="db_phrases")
+@Table(name="frases")
 public class Frase {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
