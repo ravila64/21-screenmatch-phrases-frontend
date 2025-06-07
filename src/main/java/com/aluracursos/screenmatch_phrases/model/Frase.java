@@ -3,12 +3,53 @@ package com.aluracursos.screenmatch_phrases.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="frases")
+@Table(name="db_phrases")
 public class Frase {
    @Id
    @GeneratedValue(strategy = GenerationType.IDENTITY)
    private Long id;
    private String titulo;
+   private String poster;
    private String frase;
    private String personaje;
+
+   public String getFrase() {
+      return frase;
+   }
+
+   public void setFrase(String frase) {
+      this.frase = frase;
+   }
+
+   public Long getId() {
+      return id;
+   }
+
+   public void setId(Long id) {
+      this.id = id;
+   }
+
+   public String getPersonaje() {
+      return personaje;
+   }
+
+   public void setPersonaje(String personaje) {
+      this.personaje = personaje;
+   }
+
+   public String getPoster() {
+      return poster;
+   }
+
+   public void setPoster(String poster) {
+      this.poster = poster;
+   }
+
+   public String getTitulo() {
+      return titulo;
+   }
+
+   public void setTitulo(String titulo) {
+      this.titulo = titulo;
+   }
 }
