@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://127.0.0.1:5500")
 public class FraseController {
    @Autowired
-   private FraseService service;
+   FraseService service;   // quite private
 
    @GetMapping("/series/frases")
    public FraseDTO obtenerFraseAleatoria() {
